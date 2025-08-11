@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafetyCheck - Protecting Consumers from Harmful Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- 左侧汉堡菜单 -->
+            <div class="hamburger-menu">
+                <button class="hamburger-btn" id="hamburgerBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="search.html" class="dropdown-item">Search Products</a>
+                    <a href="ingredients.html" class="dropdown-item">Ingredients</a>
+                    <a href="trends.html" class="dropdown-item">Trends</a>
+                </div>
+            </div>
+            
+            <!-- 中间Logo -->
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="SkinSured Logo" class="logo-img">
+            </div>
+            
+            <!-- 右侧菜单 -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faqs.html" class="nav-link">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主页内容 -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Protecting Consumers from Harmful Products</h1>
+                <p>Check product safety, discover ingredient risks, and make informed decisions about the products you use.</p>
+                <div class="hero-actions">
+                    <a href="search.html" class="btn btn-primary">Search Products</a>
+                    <a href="ingredients.html" class="btn btn-secondary">Learn About Ingredients</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section class="features" id="latest-news">
+            <div class="container">
+                <h2>Latest News</h2>
+
+                <!-- Three cards will be injected here by JS -->
+                <div class="features-grid" id="newsCards"></div>
+
+                <!-- Two small dots (hover/click to switch 3 pictures in a group) -->
+                <div class="news-dots" id="newsDots" aria-label="News groups">
+                <button class="news-dot active" data-group="0" aria-label="Show group 1"></button>
+                <button class="news-dot" data-group="1" aria-label="Show group 2"></button>
+                </div>
+            </div>
+        </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SkinSured. Protecting consumers from harmful products.</p>
+            <p>Contact Tel: +60 11-6181 7039 | Email: support@skinsured.com</p>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/news.js" defer></script>
+</body>
+</html>

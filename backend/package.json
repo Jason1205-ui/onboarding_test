@@ -1,0 +1,25 @@
+{
+  "name": "product-safety-api",
+  "version": "1.0.0",
+  "description": "Backend API for Product Safety with NeonBase and Vercel support",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:neon": "USE_NEON=true node app.js",
+    "dev": "nodemon app.js",
+    "dev:neon": "USE_NEON=true nodemon app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

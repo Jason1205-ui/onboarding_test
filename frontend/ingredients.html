@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients - SafetyCheck</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- hamburger menu -->
+            <div class="hamburger-menu">
+                <button class="hamburger-btn" id="hamburgerBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="search.html" class="dropdown-item">Search Products</a>
+                    <a href="ingredients.html" class="dropdown-item">Ingredients</a>
+                    <a href="trends.html" class="dropdown-item">Trends</a>
+                </div>
+            </div>
+            
+            <!-- middle logo -->
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="SkinSured Logo" class="logo-img">
+            </div>
+            
+            <!-- right menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faqs.html" class="nav-link">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ingredients page content -->
+    <main class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h1 class="glow-red">Ingredient Risk Awareness</h1>
+                <p>Learn about flagged ingredients and understand their potential risks to make informed decisions.</p>
+            </section>
+            
+            <!-- ingredient selector -->
+            <div class="ingredient-selector-section">
+                <div class="selector-container">
+                    <label for="ingredientSelect" class="selector-label">
+                        <span class="selector-icon">🔍</span>
+                        Select an ingredient to view detailed information:
+                    </label>
+                    <select id="ingredientSelect" class="ingredient-select">
+                        <option value="">Choose an ingredient...</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- ingredients information area -->
+            <div class="ingredients-section">
+                <div id="ingredientDetails" class="ingredient-details-container">
+                    <div class="no-selection-message">
+                        <div class="message-icon">📋</div>
+                        <h3>Select an ingredient to get started</h3>
+                        <p>Choose an ingredient from the dropdown above to view detailed information about its risks, restrictions, and regulatory status.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SkinSured. Protecting consumers from harmful products.</p>
+            <p>Contact Tel: +60 11-6181 7039 | Email: support@skinsured.com</p>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/ingredients.js"></script>
+</body>
+</html>

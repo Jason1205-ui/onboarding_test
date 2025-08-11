@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - SafetyCheck</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- 左侧汉堡菜单 -->
+            <div class="hamburger-menu">
+                <button class="hamburger-btn" id="hamburgerBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="search.html" class="dropdown-item">Search Products</a>
+                    <a href="ingredients.html" class="dropdown-item">Ingredients</a>
+                    <a href="trends.html" class="dropdown-item">Trends</a>
+                </div>
+            </div>
+            
+            <!-- 中间Logo -->
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="SkinSured Logo" class="logo-img">
+            </div>
+            
+            <!-- 右侧菜单 -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faqs.html" class="nav-link active">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about our platform and services.</p>
+            </section>
+
+            <!-- FAQ Content -->
+            <div class="faq-section">
+                <!-- Search & Usage -->
+                <div class="faq-category">
+                    <h2 class="category-title">
+                        <span class="category-icon">🔍</span>
+                        Search & Usage
+                    </h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I search for products?</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can use product names or product notification numbers to search for products. Simply enter your search term in the search box on our Search Products page and select the appropriate search type.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is the product notification number?</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The product notification number is a unique identifier for a cosmetic product, typically starting with "NOT". In Malaysia, the number is issued by the National Pharmaceutical Regulatory Agency (NPRA).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I filter products by safety level or harmful ingredients?</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes. Use the filter options in the Search Products section to narrow results by:</p>
+                            <ul>
+                                <li><strong>Safety Level</strong> - Low, Medium, or High Risk</li>
+                                <li><strong>Approval Status</strong> - Compliant Pending, Violation, or Unknown</li>
+                                <li><strong>Ingredient Profile</strong> - Mercury-Free, Hydroquinone-Free, Lead-Free, etc.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Safety & Ingredients -->
+                <div class="faq-category">
+                    <h2 class="category-title">
+                        <span class="category-icon">⚗️</span>
+                        Product Safety & Ingredients
+                    </h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Why is an ingredient marked as "restricted" rather than "banned"?</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>"Restricted"</strong> means the ingredient is allowed only in specific concentrations or applications under regulatory guidelines.</p>
+                            <p><strong>"Banned"</strong> means it's not permitted at all in cosmetics due to safety concerns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Sources & Authority -->
+                <div class="faq-category">
+                    <h2 class="category-title">
+                        <span class="category-icon">📊</span>
+                        Data Sources & Authority
+                    </h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What are the sources of these datasets?</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our datasets are derived from administrative records managed by the <strong>National Pharmaceutical Regulatory Agency (NPRA)</strong> under the Ministry of Health Malaysia.</p>
+                            <p>For further information, please check the <a href="https://data.gov.my/data-catalogue?search=cosmetic" target="_blank" rel="noopener">Malaysia's Official Open Data Portal - Cosmetic Products Data</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is this platform affiliated with health authorities like the FDA or MOH Malaysia?</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>No.</strong> SkinSured is an independent informational tool and is not officially affiliated with any government body. All sources are cited for transparency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal & Medical Disclaimer -->
+                <div class="faq-category">
+                    <h2 class="category-title">
+                        <span class="category-icon">⚖️</span>
+                        Legal & Medical Disclaimer
+                    </h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is the information suitable for medical or legal advice?</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>No.</strong> SkinSured is for educational and consumer awareness purposes only.</p>
+                            <p>Always consult with health professionals or regulatory bodies for specific medical or legal advice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="faq-contact">
+                    <div class="contact-card">
+                        <h3>Still have questions?</h3>
+                        <p>If you can't find the answer you're looking for, please feel free to contact us for more information.</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">🌐</span>
+                                <span>Website: <a href="http://8.138.219.192/" target="_blank" rel="noopener" style="color: white; text-decoration: underline;">http://8.138.219.192/</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span>Phone: <a href="tel:+601161817039" style="color: white; text-decoration: underline;">+60 11-6181 7039</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>Email: <a href="mailto:support@skinsured.com" style="color: white; text-decoration: underline;">support@skinsured.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SkinSured. Protecting consumers from harmful products.</p>
+            <p>Contact Tel: +60 11-6181 7039 | Email: support@skinsured.com</p>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/faqs.js"></script>
+</body>
+</html>

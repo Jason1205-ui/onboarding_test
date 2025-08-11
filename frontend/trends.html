@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends - SafetyCheck</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- hamburger menu -->
+            <div class="hamburger-menu">
+                <button class="hamburger-btn" id="hamburgerBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="search.html" class="dropdown-item">Search Products</a>
+                    <a href="ingredients.html" class="dropdown-item">Ingredients</a>
+                    <a href="trends.html" class="dropdown-item">Trends</a>
+                </div>
+            </div>
+            
+            <!-- 中间Logo -->
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="SkinSured Logo" class="logo-img">
+            </div>
+            
+            <!-- 右侧菜单 -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faqs.html" class="nav-link">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 趋势页面内容 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>Safety Trends & Manufacturer Analysis</h1>
+            <p>Stay updated with the latest trends in product safety and regulatory changes.</p>
+            
+            <!-- 警告横幅 -->
+            <div class="warning-banner">
+                <div class="warning-icon">⚠️</div>
+                <div class="warning-content">
+                    <h3>Consumer Alert</h3>
+                    <p>The following data shows manufacturers with detected harmful substances in their products. Use this information to make informed purchasing decisions.</p>
+                </div>
+            </div>
+
+            <!-- 制造商分析区域 -->
+            <div class="manufacturer-analysis">
+                <div class="analysis-header">
+                    <h2>Harmful Substance Manufacturers Distribution</h2>
+                    <p>Percentage breakdown of manufacturers with products containing harmful substances</p>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-wrapper">
+                        <canvas id="manufacturerChart"></canvas>
+                    </div>
+                    <div class="chart-legend">
+                        <h3>Risk Categories</h3>
+                        <div id="chartLegend" class="legend-items"></div>
+                    </div>
+                </div>
+                
+                <!-- 统计信息 -->
+                <div class="statistics-grid">
+                    <div class="stat-card danger">
+                        <div class="stat-icon">🚨</div>
+                        <div class="stat-info">
+                            <h3 id="totalViolations">Loading...</h3>
+                            <p>Total Violations</p>
+                        </div>
+                    </div>
+                    <div class="stat-card warning">
+                        <div class="stat-icon">⚠️</div>
+                        <div class="stat-info">
+                            <h3 id="affectedManufacturers">Loading...</h3>
+                            <p>Affected Manufacturers</p>
+                        </div>
+                    </div>
+                    <div class="stat-card info">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-info">
+                            <h3 id="totalProducts">Loading...</h3>
+                            <p>Total Products Analyzed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 详细制造商列表 -->
+            <div class="manufacturer-details">
+                <h2>Manufacturer Risk Details</h2>
+                <div id="manufacturerList" class="manufacturer-cards"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SkinSured. Protecting consumers from harmful products.</p>
+            <p>Contact Tel: +60 11-6181 7039 | Email: support@skinsured.com</p>
+        </div>
+    </footer>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js Datalabels Plugin for labels with leader lines -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/trends.js"></script>
+</body>
+</html>

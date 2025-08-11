@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Products - SafetyCheck</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- hamburger menu -->
+            <div class="hamburger-menu">
+                <button class="hamburger-btn" id="hamburgerBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="search.html" class="dropdown-item">Search Products</a>
+                    <a href="ingredients.html" class="dropdown-item">Ingredients</a>
+                    <a href="trends.html" class="dropdown-item">Trends</a>
+                </div>
+            </div>
+            
+            <!-- middle logo -->
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="SkinSured Logo" class="logo-img">
+            </div>
+            
+            <!-- right menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faqs.html" class="nav-link">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search page content -->
+    <main class="main-content">
+        <div class="container">
+            <h1>Product Safety Search</h1>
+            <p>Search for products by name or notification number to check their safety status.</p>
+            
+            <!-- 搜索表单区域 -->
+            <div class="search-section">
+                <div class="search-form">
+                    <div class="search-input-group">
+                        <input type="text" id="searchInput" placeholder="Enter product name or notification number...">
+                        <select id="searchType">
+                            <option value="both">All</option>
+                            <option value="product">Product Name</option>
+                            <option value="notification">Notification Number</option>
+                        </select>
+                    </div>
+                    <button id="searchBtn" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+
+            <!-- 筛选器区域 -->
+            <div class="filters-section">
+                <h3>Filter Products</h3>
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label>Safety Level:</label>
+                        <select id="safetyFilter">
+                            <option value="low">Low Risk (Green)</option>
+                            <option value="medium">Medium Risk (Yellow)</option>
+                            <option value="high">High Risk (Red)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Approval Status:</label>
+                        <select id="statusFilter">
+                            <option value="compliant_pending">Compliant Pending</option>
+                            <option value="violation">Violation</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Ingredient Profile:</label>
+                        <select id="ingredientFilter">
+                            <option value="mercury-free">Mercury Free</option>
+                            <option value="hydroquinone-free">Hydroquinone Free</option>
+                            <option value="lead-free">Lead Free</option>
+                            <option value="contains-harmful">Contains Harmful Substances</option>
+                        </select>
+                    </div>
+                    <div class="filter-actions">
+                        <button id="applyFilters" class="btn btn-secondary">Apply Filters</button>
+                        <button id="clearFilters" class="btn btn-outline">Clear All</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 搜索结果区域 -->
+            <div class="results-section">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!-- 产品详情模态框 -->
+            <div id="productModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="productDetails"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SkinSured. Protecting consumers from harmful products.</p>
+            <p>Contact Tel: +60 11-6181 7039 | Email: support@skinsured.com</p>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

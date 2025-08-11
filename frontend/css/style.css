@@ -1,0 +1,2772 @@
+/* 基础样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: rgb(235, 231, 211);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+/* 主要内容区域 */
+.main-content {
+    min-height: calc(100vh - 140px);
+    padding-top: 80px;
+}
+
+/* 页面头部样式 */
+.page-header {
+    text-align: center;
+    padding: 60px 0;
+    background: url('../images/bg7.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.logo-img {
+    height: 56px;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #a68854 0%, #5a5338 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(196, 161, 86, 0.3);
+}
+
+.btn-secondary {
+    background: #a99d60;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #d0b72a;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    /*background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+    background: url('../images/bg2.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 80px 0;
+    color: white;
+    min-height: 400px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features {
+    padding: 80px 0;
+    background: rgb(235, 231, 211);
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-card p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.feature-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.feature-link:hover {
+    color: #764ba2;
+}
+
+/* 搜索页面样式 */
+.search-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    max-height: 120px
+}
+
+.search-form {
+    display: flex;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.search-input-group {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+#searchType {
+    padding: 0px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    min-width: 200px;
+}
+
+/* 筛选器样式 */
+.filters-section {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin: 20px 0;
+    max-height: 200px
+}
+
+.filters-section h3 {
+    margin: 0 0 25px 0;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.filters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+}
+
+.filter-group select {
+    padding: 10px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+    min-height: 0px;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.filter-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline:hover {
+    background: #6c757d;
+    color: white;
+}
+
+/* 搜索结果样式 */
+.results-section {
+    margin-top: 40px;
+}
+
+.search-results {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 成分和趋势页面样式 */
+.ingredients-section,
+.trends-section {
+    margin-top: 40px;
+}
+
+.ingredients-list,
+.trends-list {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* 页脚 */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* 加载动画 */
+.loading {
+    text-align: center;
+    padding: 40px;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 搜索结果样式 */
+.results-header {
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+    background: #f8f9fa;
+}
+
+.results-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.result-item {
+    padding: 25px;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.result-item:hover {
+    background: #f8f9fa;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.result-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.cancelled {
+    background: #dc3545;
+    color: white;
+}
+
+.status-badge.approved {
+    background: #28a745;
+    color: white;
+}
+
+.status-badge.unknown {
+    background: #6c757d;
+    color: white;
+}
+
+.status-badge.violation {
+    background: #dc3545;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-badge.compliant-pending {
+    background: #6c757d;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-icon {
+    font-size: 0.9rem;
+}
+
+/* 风险指标样式 */
+.risk-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.risk-badge-large {
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.risk-badge-large.risk-low {
+    background: #28a745;
+    color: white;
+}
+
+.risk-badge-large.risk-medium {
+    background: #ffc107;
+    color: #333;
+}
+
+.risk-badge-large.risk-high {
+    background: #dc3545;
+    color: white;
+}
+
+.risk-icon {
+    font-size: 1.1rem;
+}
+
+.result-details p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.risk-warning {
+    color: #dc3545 !important;
+    font-weight: 600;
+}
+
+.harmful-substances {
+    background: #fff5f5;
+    border: 1px solid #fed7d7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.harmful-substances h5 {
+    color: #dc3545;
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+.substance-item {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 8px 0;
+    border-left: 4px solid #dc3545;
+}
+
+.substance-explanation {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.compliant-info {
+    background: #f0f8f0;
+    border: 1px solid #c3e6c3;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.compliant-info p {
+    margin: 5px 0;
+    color: #2d5a2d;
+}
+
+.violation-warning {
+    background: #fff5f5;
+    border: 2px solid #fed7d7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.violation-warning h4 {
+    color: #dc3545;
+    margin: 0 0 10px 0;
+}
+
+.violation-warning p {
+    color: #721c24;
+    margin: 0;
+    font-weight: 500;
+}
+
+.compliant-note {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.compliant-note h4 {
+    color: #495057;
+    margin: 0 0 10px 0;
+}
+
+.compliant-note p {
+    color: #6c757d;
+    margin: 0;
+}
+
+.no-results {
+    text-align: center;
+    padding: 60px 40px;
+    color: #666;
+}
+
+/* 产品卡片样式 */
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.product-title h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.product-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.product-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.view-details-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.view-details-btn:hover {
+    background: #5a67d8;
+}
+
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.close:hover {
+    color: #333;
+}
+
+#productDetails {
+    padding: 40px;
+}
+
+.product-detail-header {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.product-detail-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+.product-detail-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.meta-label {
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.meta-value {
+    font-size: 1rem;
+    color: #333;
+}
+
+.approval-section,
+.ingredients-section,
+.recommendations-section {
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 10px;
+    background: #f8f9fa;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ingredient-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.ingredient-card-small {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #dc3545;
+}
+
+.ingredient-name {
+    font-weight: 600;
+    color: #dc3545;
+    margin-bottom: 8px;
+}
+
+.ingredient-explanation {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recommendation-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.recommendation-card:hover {
+    border-color: #667eea;
+}
+
+.rec-product-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rec-meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* 筛选摘要样式 */
+.filter-summary {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.filter-summary h3 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.filter-info {
+    color: #666;
+    line-height: 1.6;
+}
+
+.filter-details {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.filter-details div {
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.filter-details div:last-child {
+    border-bottom: none;
+}
+
+/* 筛选结果样式 */
+.filter-results {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.statistics-display {
+    padding: 30px;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.stat-icon {
+    font-size: 3rem;
+    opacity: 0.9;
+}
+
+.stat-content h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.stat-description {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+.stat-info {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.stat-info h4 {
+    color: #333;
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+}
+
+.stat-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+.stat-info li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #555;
+    line-height: 1.5;
+}
+
+.stat-info li:last-child {
+    border-bottom: none;
+}
+
+.compliant-pending-info {
+    padding: 40px;
+    text-align: center;
+}
+
+.info-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.compliant-pending-info h4 {
+    color: #333;
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+}
+
+.compliant-pending-info p {
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.filter-suggestion {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.filter-suggestion h5 {
+    color: #333;
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+}
+
+.filter-suggestion ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.filter-suggestion li {
+    padding: 8px 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+.filter-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.filter-summary ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.filter-summary li {
+    padding: 5px 0;
+    color: #555;
+}
+
+/* 成分选择器样式 */
+.ingredient-selector-section {
+    margin: 40px 0;
+}
+
+.selector-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.selector-label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.selector-icon {
+    font-size: 1.5rem;
+}
+
+.ingredient-select {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    /* Custom dropdown arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23a27c2a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 50px;
+}
+
+.ingredient-select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.ingredient-select:hover {
+    border-color: #b89450;
+}
+
+/* 无选择状态消息 */
+.no-selection-message {
+    text-align: center;
+    padding: 60px 40px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 2px dashed #dee2e6;
+}
+
+.message-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.no-selection-message h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.no-selection-message p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* 成分详情容器 */
+.ingredient-details-container {
+    min-height: 300px;
+}
+
+/* 选中成分显示样式 */
+.selected-ingredient-display {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 响应式设计 - 成分选择器 */
+@media (max-width: 768px) {
+    .selector-container {
+        padding: 20px;
+    }
+    
+    .selector-label {
+        font-size: 1.1rem;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .ingredient-select {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+    }
+    
+    .no-selection-message {
+        padding: 40px 20px;
+    }
+    
+    .message-icon {
+        font-size: 3rem;
+    }
+    
+    .no-selection-message h3 {
+        font-size: 1.3rem;
+    }
+    
+    .no-selection-message p {
+        font-size: 1rem;
+    }
+}
+
+/* FAQ页面样式 */
+.faq-section {
+    margin-top: 40px;
+}
+
+.faq-category {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.category-title {
+    background: linear-gradient(135deg, #8b8b68 0%, #736046 100%);
+    color: white;
+    padding: 20px 30px;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.category-icon {
+    font-size: 1.6rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item:hover {
+    background: #f8f9fa;
+}
+
+.faq-question {
+    padding: 25px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faq-question h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    flex: 1;
+    line-height: 1.4;
+}
+
+.expand-icon {
+    font-size: 1.5rem;
+    color: #667eea;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    min-width: 30px;
+    text-align: center;
+}
+
+.faq-item.active .expand-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 20px 30px 30px;
+}
+
+.faq-answer p {
+    margin: 0 0 15px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.faq-answer li {
+    margin: 8px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.faq-answer a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.faq-answer a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* 联系信息卡片 */
+.faq-contact {
+    margin-top: 40px;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #8b8b68 0%, #736046 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(139, 139, 104, 0.3);
+}
+
+.contact-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.contact-card > p {
+    margin: 0 0 30px 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.contact-info a:hover {
+    opacity: 0.8;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+}
+
+/* 响应式设计 - FAQ */
+@media (max-width: 768px) {
+    .faq-question {
+        padding: 20px 20px;
+    }
+    
+    .faq-answer {
+        padding: 0 20px;
+    }
+    
+    .faq-item.active .faq-answer {
+        padding: 15px 20px 25px;
+    }
+    
+    .category-title {
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .contact-card {
+        padding: 30px 20px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contact-card h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* About Us页面样式 */
+.about-content {
+    margin-top: 40px;
+}
+
+.company-intro {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.company-name {
+    margin-bottom: 30px;
+}
+
+.company-name h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.company-description {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.company-description p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+    text-align: justify;
+}
+
+/* 响应式设计 - About Us */
+@media (max-width: 768px) {
+    .company-intro {
+        padding: 30px 25px;
+    }
+    
+    .company-name h2 {
+        font-size: 2.5rem;
+    }
+    
+    .company-description p {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .company-intro {
+        padding: 25px 20px;
+    }
+    
+    .company-name h2 {
+        font-size: 2rem;
+    }
+    
+    .company-description p {
+        font-size: 1rem;
+    }
+}
+
+/* 成分页面样式 */
+.ingredients-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 0;
+    background: url('../images/bg4.png') no-repeat center center;
+    
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.ingredients-header h2 {
+    margin: 0 0 15px 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.header-description {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 禁用成分卡片样式 */
+.banned-ingredient-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #dc3545;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banned-ingredient-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ingredient-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.ingredient-title {
+    flex: 1;
+    min-width: 250px;
+}
+
+.ingredient-title h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.ingredient-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.status-badge {
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-badge.status-banned {
+    background: #dc3545;
+    color: white;
+}
+
+.status-badge.status-restricted {
+    background: #ffc107;
+    color: #333;
+}
+
+.trend-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.trend-badge.trend-rising {
+    background: #fff5f5;
+    color: #dc3545;
+    border: 1px solid #fed7d7;
+}
+
+.trend-badge.trend-falling {
+    background: #f0f8f0;
+    color: #28a745;
+    border: 1px solid #c3e6c3;
+}
+
+.trend-badge.trend-stable {
+    background: #f8f9fa;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+}
+
+.restriction-date {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    min-width: 200px;
+    text-align: right;
+}
+
+.date-label {
+    color: #666;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.date-value {
+    color: #333;
+    font-weight: 700;
+}
+
+.ingredient-content {
+    border-top: 1px solid #e9ecef;
+    padding-top: 25px;
+}
+
+.reason-section {
+    margin-bottom: 30px;
+}
+
+.reason-section h4 {
+    color: #333;
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.reason-text {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    background: #fff5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #dc3545;
+    margin: 0;
+}
+
+.sources-section h4 {
+    color: #333;
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sources-list {
+    display: grid;
+    gap: 15px;
+}
+
+.source-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.source-item:hover {
+    background: #e9ecef;
+}
+
+.source-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.source-link {
+    text-decoration: none;
+    color: #667eea;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.source-link:hover {
+    color: #5a67d8;
+}
+
+.source-title {
+    flex: 1;
+}
+
+.external-link-icon {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.source-org {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.ingredients-footer {
+    margin-top: 50px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.disclaimer {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.disclaimer h4 {
+    color: #333;
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+}
+
+.disclaimer p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.last-updated {
+    text-align: center;
+}
+
+.last-updated p {
+    color: #666;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* 旧的成分卡片样式（保持兼容性）*/
+.ingredient-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #667eea;
+}
+
+.ingredient-card.risk-high {
+    border-left-color: #dc3545;
+}
+
+.ingredient-card.risk-medium {
+    border-left-color: #ffc107;
+}
+
+.risk-badge {
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.risk-badge.risk-high {
+    background: #dc3545;
+    color: white;
+}
+
+.risk-badge.risk-medium {
+    background: #ffc107;
+    color: #333;
+}
+
+.ingredient-description {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.ingredient-risks,
+.ingredient-tips {
+    margin-bottom: 20px;
+}
+
+.ingredient-risks h4,
+.ingredient-tips h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.ingredient-risks ul,
+.ingredient-tips ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ingredient-risks li,
+.ingredient-tips li {
+    padding: 5px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.ingredient-risks li::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+}
+
+.ingredient-tips li::before {
+    content: "💡";
+    position: absolute;
+    left: 0;
+}
+
+/* 趋势卡片样式 */
+.trend-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #667eea;
+}
+
+.trend-card.trend-rising {
+    border-left-color: #dc3545;
+}
+
+.trend-card.trend-falling {
+    border-left-color: #28a745;
+}
+
+.trend-card.trend-stable {
+    border-left-color: #6c757d;
+}
+
+.trend-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.trend-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.trend-indicator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trend-icon {
+    font-size: 1.2rem;
+}
+
+.trend-text {
+    font-weight: 600;
+    color: #333;
+}
+
+.trend-percent {
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.trend-rising .trend-percent {
+    background: #dc3545;
+    color: white;
+}
+
+.trend-falling .trend-percent {
+    background: #28a745;
+    color: white;
+}
+
+.trend-stable .trend-percent {
+    background: #6c757d;
+    color: white;
+}
+
+.trend-reason {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.trend-meta p {
+    margin: 5px 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* 消息提示 */
+.message {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 1001;
+    animation: slideIn 0.3s ease-out;
+}
+
+.message-info {
+    background: #17a2b8;
+}
+
+.message-warning {
+    background: #ffc107;
+    color: #333;
+}
+
+.message-error {
+    background: #dc3545;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .search-form {
+        flex-direction: column;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-content {
+        padding-top: 100px;
+    }
+    
+    .result-header,
+    .ingredient-header,
+    .trend-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .trend-indicator {
+        margin-top: 10px;
+    }
+}
+
+/* Trends Page Styles */
+.warning-banner {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.warning-icon {
+    font-size: 3rem;
+    margin-right: 2rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.warning-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.warning-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.manufacturer-analysis {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.analysis-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.analysis-header h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.analysis-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.chart-wrapper {
+    position: relative;
+    height: 500px; /* Increased height for labels */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Extra padding for external labels */
+}
+
+#manufacturerChart {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Chart label styles */
+.chartjs-datalabels {
+    pointer-events: none;
+}
+
+/* Custom styles for chart container to prevent overflow */
+.chart-wrapper canvas {
+    overflow: visible !important;
+}
+
+/* Inline Recommendations Styles */
+.product-card-container {
+    margin-bottom: 2rem;
+}
+
+.inline-recommendations {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #28a745;
+}
+
+.recommendations-title {
+    color: #28a745;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.recommendations-grid-inline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recommendation-card-inline {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recommendation-card-inline:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.recommendation-card-inline .rec-product-name {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.recommendation-card-inline .rec-meta {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 0.3rem;
+}
+
+.recommendation-card-inline .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0.5rem 0;
+}
+
+.recommendation-card-inline .rec-reason {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0.5rem 0 0 0;
+    line-height: 1.3;
+}
+
+.show-more-recommendations {
+    background: #17a2b8;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.show-more-recommendations:hover {
+    background: #138496;
+}
+
+/* Mobile responsive for inline recommendations */
+@media (max-width: 768px) {
+    .recommendations-grid-inline {
+        grid-template-columns: 1fr;
+    }
+    
+    .inline-recommendations {
+        padding: 1rem;
+    }
+    
+    .recommendations-title {
+        font-size: 1rem;
+    }
+}
+
+/* Compliant Pending Count Display Styles */
+.compliant-pending-count {
+    text-align: center;
+    padding: 2rem;
+}
+
+.count-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.count-icon {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.count-info {
+    text-align: left;
+}
+
+.product-count {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #17a2b8;
+    margin: 0;
+    line-height: 1;
+}
+
+.count-label {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.count-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.detail-value {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.compliance-explanation {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: #e3f2fd;
+    border-radius: 10px;
+    border-left: 4px solid #2196f3;
+}
+
+.compliance-explanation h4 {
+    color: #1976d2;
+    margin-bottom: 1rem;
+}
+
+.compliance-explanation ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.compliance-explanation li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Mobile responsive for count display */
+@media (max-width: 768px) {
+    .count-display {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .count-info {
+        text-align: center;
+    }
+    
+    .product-count {
+        font-size: 2.5rem;
+    }
+    
+    .count-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .compliant-pending-count {
+        padding: 1rem;
+    }
+}
+
+.chart-legend h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.legend-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.legend-item:hover {
+    transform: translateX(5px);
+    background: #e9ecef;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.legend-info {
+    flex: 1;
+}
+
+.legend-label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.2rem;
+}
+
+.legend-value {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card.danger {
+    border-left: 5px solid #dc3545;
+}
+
+.stat-card.warning {
+    border-left: 5px solid #ffc107;
+}
+
+.stat-card.info {
+    border-left: 5px solid #17a2b8;
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.stat-info h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.stat-info p {
+    color: #7f8c8d;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.manufacturer-details {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.manufacturer-details h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.manufacturer-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.manufacturer-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 2rem;
+    border-left: 5px solid #dc3545;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.manufacturer-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.manufacturer-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.violation-count {
+    display: inline-block;
+    background: #dc3545;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.harmful-substances {
+    margin-top: 1rem;
+}
+
+.harmful-substances h4 {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.substance-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.substance-tag {
+    background: #fff3cd;
+    color: #856404;
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #ffeaa7;
+}
+
+/* Responsive Design for Trends */
+@media (max-width: 768px) {
+    .chart-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .chart-wrapper {
+        height: 400px; /* Increased mobile height for labels */
+        padding: 15px;
+    }
+    
+    .statistics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .manufacturer-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .warning-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .warning-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Additional Trends Page Styles */
+.loading-message {
+    text-align: center;
+    padding: 3rem;
+    color: #7f8c8d;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    text-align: center;
+    padding: 3rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border: 2px dashed #dee2e6;
+}
+
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.error-message h3 {
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+.error-message p {
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.retry-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.retry-button:hover {
+    background: #0056b3;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.message-info {
+    background: #d1ecf1;
+    border-left: 5px solid #17a2b8;
+    color: #0c5460;
+}
+
+.message-warning {
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+    color: #856404;
+}
+
+.message-icon {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.message-text {
+    flex: 1;
+}
+
+.risk-percentage {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #fff3cd;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+    color: #856404;
+}
+
+/* —— Latest News（3卡片一组）—— */
+#latest-news .feature-card { 
+    text-align: left; padding: 24px 22px; 
+}
+
+.news-card-image { 
+    width: 100%; height: 140px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    display: block; 
+    margin-bottom: 14px; 
+    background: #eee; 
+}
+
+.news-meta { 
+    font-size: .9rem; 
+    color: #6b7280; 
+    margin-bottom: 8px; 
+}
+
+.news-title { 
+    font-size: 1.1rem; 
+    font-weight: 700; 
+    color: #333; margin: 2px 0 8px; 
+    line-height: 1.35; 
+}
+
+.news-excerpt { 
+    color: #666; 
+    margin-bottom: 12px; 
+    line-height: 1.6; 
+}
+
+.news-link { 
+    font-weight: 600; 
+    text-decoration: none; 
+    color: #667eea; 
+}
+
+.news-link:hover { 
+    color: #764ba2; 
+}
+
+.news-dots { 
+    display: flex; 
+    gap: 10px; 
+    justify-content: center; 
+    margin-top: 18px; 
+}
+
+.news-dot { 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    border: 2px solid #a99d60; 
+    background: transparent; 
+    cursor: pointer; 
+    transition: transform .2s ease, background .2s ease, border-color .2s ease; 
+}
+
+.news-dot:hover { 
+    transform: scale(1.1); 
+}
+
+.news-dot.active { 
+    background: #a99d60; 
+    border-color: #a99d60; 
+}
+
+#newsCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+#newsCards .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+.news-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Up to 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* ——Two-line toolbar —— */
+.search-toolbar{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  background:#fff;
+  padding:16px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  margin:24px 0 8px;
+}
+
+/* Line 1: Enter + Type + Search (left) */
+.stb-row.stb-top{
+  display:grid;
+  grid-template-columns: minmax(320px, 1fr) 220px auto;
+  gap:12px;
+  align-items:center;
+}
+
+/* Line 2: Three pull-downs + Apply/Clear (to the right) */
+.stb-row.stb-bottom{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr)) auto;
+  gap:12px;
+  align-items:center;
+}
+.stb-actions{ display:flex; gap:10px; justify-self:end; }
+
+
+.stb-input,.stb-select{
+  height:44px;
+  padding:0 12px;
+  border:2px solid #e9ecef;
+  border-radius:8px;
+  font-size:15px;
+}
+.stb-input:focus,.stb-select:focus{ outline:none; border-color:#a99d60; }
+
+.stb-btn{
+  height:44px; padding:0 16px; border-radius:8px; border:2px solid transparent;
+  background:#e9e6d4; font-weight:600; cursor:pointer;
+}
+.stb-btn.primary{ background:linear-gradient(135deg,#a68854 0%,#5a5338 100%); color:#fff; }
+.stb-btn.ghost{ background:transparent; border-color:#cfc9b2; color:#5b5748; }
+.stb-btn:hover{ transform:translateY(-1px); }
+
+
+@media (max-width: 1200px){
+  .stb-row.stb-top{
+    grid-template-columns: minmax(260px, 1fr) 200px auto;
+  }
+  .stb-row.stb-bottom{
+    grid-template-columns: repeat(3, minmax(180px, 1fr)) auto;
+  }
+}
+@media (max-width: 900px){
+  .stb-row.stb-top{
+    grid-template-columns: 1fr auto;
+  }
+  .stb-row.stb-top .stb-input{ grid-column:1 / -1; }
+  .stb-row.stb-bottom{
+    grid-template-columns: 1fr 1fr;
+  }
+  .stb-actions{ grid-column: 1 / -1; justify-self: stretch; }
+  .stb-actions .stb-btn{ flex:1; } 
+}
+
+
+
+/* 三组筛选：小屏 1 列，桌面端 3 列均分 */
+.filters-container {
+  display: grid;
+  grid-template-columns: 1fr;        /* 默认单列 */
+  row-gap: 16px;
+}
+
+@media (min-width: 992px) {
+  .filters-container {
+    grid-template-columns: repeat(3, 1fr);  /* 三列 */
+    column-gap: 24px;
+    align-items: center;
+  }
+  /* 按钮行占满整行并居中 */
+  .filters-container .filter-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+/* 让 label 和 select 同一行（基于你已有的样式覆盖） */
+@media (min-width: 768px) {
+  .filter-group {
+    flex-direction: row;      /* 横排 */
+    align-items: center;      /* 文字与下拉垂直居中 */
+    gap: 12px;
+  }
+  .filter-group label {
+    margin: 0;
+    white-space: nowrap;
+    min-width: 80px;         /* 关键：给足宽度，避免“Ingredient Profile”被挤断 */
+    font-size: 14px;
+  }
+  .filter-group select {
+    flex: 0 0 220px;                  /* 占满剩余空间 */
+    padding: 6px 10px;        /* 变矮 */
+    height: 36px;
+    line-height: 1.2;
+    font-size: 14px;
+    min-width: 0;             /* 防止被内容撑破 */
+  }
+}
+
+.glow-red {
+    color: #fff; /* 白色文字 */
+    text-shadow:
+        0 0 4px rgba(255, 0, 0, 0.6),
+        0 0 8px rgba(255, 0, 0, 0.5),
+        0 0 12px rgba(255, 0, 0, 0.4),
+        0 0 20px rgba(255, 0, 0, 0.3);
+    transition: text-shadow 0.3s ease;
+}
+
+.glow-red:hover {
+    text-shadow:
+        0 0 6px rgba(255, 0, 0, 0.7),
+        0 0 12px rgba(255, 0, 0, 0.6),
+        0 0 18px rgba(255, 0, 0, 0.5),
+        0 0 25px rgba(255, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
