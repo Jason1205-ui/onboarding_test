@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://onboarding-test-epbc.vercel.app/api/$1"
+    }
+  ]
+}
